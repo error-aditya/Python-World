@@ -1,0 +1,5 @@
+
+# it allows to create the django project
+django-admin startproject myproject
+
+#
