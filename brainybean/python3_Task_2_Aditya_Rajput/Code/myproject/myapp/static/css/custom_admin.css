@@ -1,0 +1,46 @@
+/* Custom Admin Styles */
+body {
+    background-color: #2ea5e4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+
+}
+
+#header {
+    background-color: #4CAF50; /* Custom header color */
+    color: white;
+}
+
+#site-name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#site-logo img {
+    max-height: 40px;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#content-main {
+    background-color: #2231d4;
+    padding: 20px;
+}
+
+.module caption {
+    font-size: 18px;
+    color: #4CAF50;
+}
+
+/* Custom Buttons */
+input[type="submit"], .button {
+    background-color: #e71919;
+    color: white;
+    border-radius: 5px;
+}
+
+a {
+    color: #4CAF50;
+}

@@ -1,0 +1,34 @@
+{% extends "admin/base.html" %}
+
+{% load static %}  <!-- Add this line to load static files -->
+
+{% block title %}{{ site_title }}{% endblock %}
+
+{% block extrastyle %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/custom_admin.css' %}">
+{% endblock %}
+
+{% block branding %}
+{% if site_header %}
+<div id="site-logo">
+    <img src="{% static 'icons/logo.png' %}" alt="Custom Logo" style="max-width: 200px;"/>
+</div>
+{% endif %}
+<h1 id="site-name">{{ site_header }}</h1>
+{% endblock %}
+
+
+{% block nav-global %}
+    <div id="nav-global">
+        <a href="/">Back to Site</a>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="module" id="welcome">
+        <div class="module-content">
+            <p>Welcome to the custom Django admin panel.</p>
+        </div>
+    </div>
+    {{ block.super }}
+{% endblock %}
